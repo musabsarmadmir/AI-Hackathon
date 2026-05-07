@@ -7,3 +7,7 @@ openai==1.45.0
 requests==2.32.3
 # For image handling (optional)
 pillow==10.4.0
+# Test / dev
+pytest==7.4.0
+httpx==0.24.1
+pytest-asyncio==0.22.0

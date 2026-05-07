@@ -12,7 +12,8 @@ ENV_PATH = Path(__file__).resolve().parent.parent.parent / "local.env"
 load_dotenv(ENV_PATH)
 
 # --- API Keys ---
-OPENAI_API_KEY = os.getenv("OPENAI_KEY", "")
+# Prefer the common name OPENAI_API_KEY but accept legacy OPENAI_KEY for compatibility.
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY") or os.getenv("OPENAI_KEY") or ""
 OPENWEATHER_API_KEY = os.getenv("OPENWEATHER_KEY", "")
 GOOGLE_MAPS_API_KEY = os.getenv("GOOGLE_MAPS_KEY", "")
 

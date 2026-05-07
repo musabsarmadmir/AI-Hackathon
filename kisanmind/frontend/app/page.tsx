@@ -33,27 +33,29 @@ export default function Home() {
   const [suppliers, setSuppliers] = useState<SupplierResult | null>(null);
 
   const handleSubmit = async () => {
-    if (!imageUrl) return alert("Please upload a photo first.");
+    if (!imageUrl) return alert("Please provide an image URL first.");
     setLoading(true);
     try {
+      const base = process.env.NEXT_PUBLIC_API_BASE || "http://localhost:8000";
+
       // 1️⃣ Diagnose the crop
-      const diagRes = await axios.post("/api/diagnose", { image_url: imageUrl, location });
-      const diagData: DiagnosisResult = JSON.parse(diagRes.data);
+      const diagRes = await axios.post(`${base}/diagnose`, { image_url: imageUrl, location });
+      const diagData: DiagnosisResult = diagRes.data;
       setDiagnosis(diagData);
 
       // 2️⃣ Weather advisory (pass location)
-      const weatherRes = await axios.post("/api/weather", { location });
-      const weatherData: WeatherResult = JSON.parse(weatherRes.data);
+      const weatherRes = await axios.post(`${base}/weather`, { location });
+      const weatherData: WeatherResult = weatherRes.data;
       setWeather(weatherData);
 
       // 3️⃣ Treatment based on diagnosis
-      const treatRes = await axios.post("/api/treatment", { crop: "wheat", disease: diagData.disease });
-      const treatData: TreatmentResult = JSON.parse(treatRes.data);
+      const treatRes = await axios.post(`${base}/treatment`, { crop: "wheat", disease: diagData.disease });
+      const treatData: TreatmentResult = treatRes.data;
       setTreatment(treatData);
 
       // 4️⃣ Supplier lookup
-      const suppRes = await axios.post("/api/supplier", { crop: "wheat", location, need: treatData.chemical });
-      const suppData: SupplierResult = JSON.parse(suppRes.data);
+      const suppRes = await axios.post(`${base}/supplier`, { crop: "wheat", location, need: treatData.chemical });
+      const suppData: SupplierResult = suppRes.data;
       setSuppliers(suppData);
     } catch (e) {
       console.error(e);
@@ -63,23 +65,22 @@ export default function Home() {
     }
   };
 
+  // For privacy and removing demo keys, accept an image URL from the user instead of uploading.
   const handleFileChange = async (e: React.ChangeEvent<HTMLInputElement>) => {
-    const file = e.target.files?.[0];
-    if (!file) return;
-    // Simple client‑side upload to imgbb (public demo key) – replace with your own storage in prod.
-    const form = new FormData();
-    form.append("image", file);
-    const res = await fetch("https://api.imgbb.com/1/upload?key=1c2a3b4c5d6e7f8g9h0i", { method: "POST", body: form });
-    const json = await res.json();
-    setImageUrl(json.data.url);
+    // keep existing handler name but prompt for a URL; no third-party demo keys used.
+    const url = prompt("Paste a public image URL for your crop photo:");
+    if (url) setImageUrl(url);
   };
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-green-50 to-blue-100 p-6">
       <h1 className="text-4xl font-bold mb-6 text-green-800 drop-shadow-md">KisanMind 🌾</h1>
       <div className="w-full max-w-md bg-white rounded-xl shadow-lg p-6 mb-6">
-        <label className="block text-sm font-medium text-gray-700 mb-2">Upload crop photo</label>
-        <input type="file" accept="image/*" onChange={handleFileChange} className="block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-green-600 file:text-white hover:file:bg-green-700" />
+        <label className="block text-sm font-medium text-gray-700 mb-2">Crop photo URL</label>
+        <div className="flex gap-2">
+          <input type="text" placeholder="https://example.com/mycrop.jpg" value={imageUrl} onChange={e => setImageUrl(e.target.value)} className="w-full rounded border-gray-300 focus:border-green-500 focus:ring-green-500" />
+          <button onClick={handleFileChange} className="px-3 py-1 bg-gray-100 rounded">Paste URL</button>
+        </div>
         {imageUrl && (
           <div className="mt-4 relative h-48">
             <Image src={imageUrl} alt="Crop" fill style={{ objectFit: "contain" }} />

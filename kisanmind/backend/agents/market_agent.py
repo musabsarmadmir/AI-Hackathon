@@ -9,7 +9,7 @@ from backend.tools.market_scraper import fetch_market_prices, get_price_trend
 
 client = AsyncOpenAI(api_key=OPENAI_API_KEY)
 
-SYSTEM_PROMPT = """You are KisanMind's Market Intelligence Agent — an expert in agricultural 
+SYSTEM_PROMPT = """You are KisanMind's Market Intelligence Agent with nearly 20 years of experience, an expert in agricultural 
 commodity markets in Pakistan and India.
 
 Given real market price data, produce actionable JSON recommendations for farmers.

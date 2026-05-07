@@ -1,0 +1,26 @@
+version: '3.8'
+services:
+  backend:
+    build:
+      context: ./
+      dockerfile: kisanmind/Dockerfile
+    container_name: kisanmind-backend
+    ports:
+      - "8000:8000"
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - OPENWEATHER_KEY=${OPENWEATHER_KEY}
+      - GOOGLE_MAPS_KEY=${GOOGLE_MAPS_KEY}
+    volumes:
+      - ./kisanmind/backend:/app
+
+  frontend:
+    build:
+      context: ./kisanmind/frontend
+    container_name: kisanmind-frontend
+    ports:
+      - "3000:3000"
+    environment:
+      - NEXT_PUBLIC_API_BASE=http://backend:8000
+    depends_on:
+      - backend
