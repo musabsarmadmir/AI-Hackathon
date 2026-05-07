@@ -14,13 +14,14 @@ services:
     volumes:
       - ./kisanmind/backend:/app
 
-  frontend:
+  streamlit:
     build:
-      context: ./kisanmind/frontend
-    container_name: kisanmind-frontend
+      context: ./
+      dockerfile: kisanmind/streamlit.Dockerfile
+    container_name: kisanmind-streamlit
     ports:
-      - "3000:3000"
+      - "8501:8501"
     environment:
-      - NEXT_PUBLIC_API_BASE=http://backend:8000
+      - STREAMLIT_API_BASE=http://backend:8000
     depends_on:
       - backend

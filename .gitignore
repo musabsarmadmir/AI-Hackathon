@@ -1,0 +1,40 @@
+# Environment files
+local.env
+.env
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Pytest cache
+.pytest_cache/
+
+# Byte-compiled / optimized / DLL files
+*.so
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store
+
+# Node
+node_modules/
+frontend/.next/
+
+# Logs
+logs/
+*.log
+
+# Docker
+*.env
+
+# Local secrets
+kisanmind/local.env
