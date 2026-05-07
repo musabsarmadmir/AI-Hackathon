@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+html, body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, hsl(150, 85%, 95%), hsl(210, 90%, 98%));
+  background-attachment: fixed;
+}
+
+/* Glassmorphism container utility */
+.bg-glass {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Smooth hover transitions */
+* {
+  transition: all 0.2s ease-in-out;
+}

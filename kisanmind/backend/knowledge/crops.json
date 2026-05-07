@@ -1,0 +1,11 @@
+[
+  {"id": "wheat", "name": "Wheat", "urdu": "گندم", "season": "Rabi (Oct-Apr)", "sowing_months": [10, 11], "harvest_months": [3, 4], "water_needs_mm_per_week": 25, "common_diseases": ["wheat_leaf_rust", "wheat_yellow_rust"]},
+  {"id": "rice", "name": "Rice", "urdu": "چاول", "season": "Kharif (Jun-Nov)", "sowing_months": [6, 7], "harvest_months": [10, 11], "water_needs_mm_per_week": 50, "common_diseases": ["rice_blast", "rice_bacterial_blight"]},
+  {"id": "cotton", "name": "Cotton", "urdu": "کپاس", "season": "Kharif (Apr-Nov)", "sowing_months": [4, 5], "harvest_months": [9, 10, 11], "water_needs_mm_per_week": 30, "common_diseases": ["cotton_bollworm", "cotton_whitefly"]},
+  {"id": "tomato", "name": "Tomato", "urdu": "ٹماٹر", "season": "Year-round", "sowing_months": [1, 2, 7, 8], "harvest_months": [3, 4, 5, 10, 11], "water_needs_mm_per_week": 25, "common_diseases": ["tomato_late_blight", "tomato_early_blight"]},
+  {"id": "sugarcane", "name": "Sugarcane", "urdu": "گنا", "season": "Feb-Jan (12 months)", "sowing_months": [2, 3, 9], "harvest_months": [12, 1, 2], "water_needs_mm_per_week": 40, "common_diseases": ["sugarcane_red_rot"]},
+  {"id": "mango", "name": "Mango", "urdu": "آم", "season": "Perennial", "sowing_months": [], "harvest_months": [5, 6, 7], "water_needs_mm_per_week": 20, "common_diseases": ["mango_anthracnose"]},
+  {"id": "potato", "name": "Potato", "urdu": "آلو", "season": "Rabi (Oct-Mar)", "sowing_months": [10, 11], "harvest_months": [2, 3], "water_needs_mm_per_week": 25, "common_diseases": ["potato_late_blight"]},
+  {"id": "maize", "name": "Maize/Corn", "urdu": "مکئی", "season": "Kharif (Jul-Oct) / Spring (Feb-Jun)", "sowing_months": [2, 3, 7], "harvest_months": [5, 6, 10], "water_needs_mm_per_week": 30, "common_diseases": ["maize_stem_borer"]},
+  {"id": "chickpea", "name": "Chickpea", "urdu": "چنا", "season": "Rabi (Oct-Mar)", "sowing_months": [10, 11], "harvest_months": [3, 4], "water_needs_mm_per_week": 15, "common_diseases": ["chickpea_wilt"]}
+]

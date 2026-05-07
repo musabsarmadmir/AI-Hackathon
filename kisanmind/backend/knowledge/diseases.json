@@ -1,0 +1,242 @@
+[
+  {
+    "id": "wheat_leaf_rust",
+    "name": "Wheat Leaf Rust (Brown Rust)",
+    "crop": "wheat",
+    "scientific_name": "Puccinia triticina",
+    "symptoms": ["small orange-brown pustules on upper leaf surface", "yellow halo around pustules", "leaves turn yellow and dry prematurely", "reduced grain filling"],
+    "affected_parts": ["leaves", "leaf sheaths"],
+    "favorable_conditions": "Temperature 15-25°C, high humidity, dew formation",
+    "severity_indicators": {
+      "low": "Few scattered pustules, <10% leaf area affected",
+      "medium": "Moderate pustules, 10-40% leaf area affected",
+      "high": "Dense pustules, 40-70% leaf area affected",
+      "critical": "Entire leaf covered, >70% area affected, premature drying"
+    },
+    "common_in": ["Punjab", "Sindh", "KPK", "Rajasthan", "Haryana", "UP"]
+  },
+  {
+    "id": "wheat_yellow_rust",
+    "name": "Wheat Yellow Rust (Stripe Rust)",
+    "crop": "wheat",
+    "scientific_name": "Puccinia striiformis",
+    "symptoms": ["yellow-orange pustules in linear stripes along leaf veins", "stripes run parallel to leaf length", "leaves turn completely yellow", "stunted growth"],
+    "affected_parts": ["leaves", "leaf sheaths", "heads"],
+    "favorable_conditions": "Cool temperatures 10-15°C, high humidity, cloudy weather",
+    "severity_indicators": {
+      "low": "Few yellow stripes visible, <10% leaf area",
+      "medium": "Multiple stripes, 10-30% leaf area",
+      "high": "Extensive striping, 30-60% leaf area",
+      "critical": "Complete leaf yellowing, >60% area, spreading to head"
+    },
+    "common_in": ["Northern Punjab", "KPK", "Kashmir", "Himachal Pradesh"]
+  },
+  {
+    "id": "rice_blast",
+    "name": "Rice Blast",
+    "crop": "rice",
+    "scientific_name": "Magnaporthe oryzae",
+    "symptoms": ["diamond/spindle-shaped lesions on leaves", "gray-white center with brown borders", "lesions on nodes causing stem breakage", "neck rot causing empty panicles"],
+    "affected_parts": ["leaves", "nodes", "neck", "panicles"],
+    "favorable_conditions": "Temperature 25-28°C, high humidity >80%, excessive nitrogen fertilization",
+    "severity_indicators": {
+      "low": "Few leaf spots, <5% leaf area",
+      "medium": "Multiple spots coalescing, 5-25% leaf area",
+      "high": "Large dead areas on leaves, 25-50% affected",
+      "critical": "Neck blast, panicle death, >50% plant affected"
+    },
+    "common_in": ["Punjab", "Sindh", "West Bengal", "Tamil Nadu", "Andhra Pradesh"]
+  },
+  {
+    "id": "rice_bacterial_blight",
+    "name": "Rice Bacterial Leaf Blight",
+    "crop": "rice",
+    "scientific_name": "Xanthomonas oryzae",
+    "symptoms": ["water-soaked lesions on leaf margins", "lesions turn yellow then white/gray", "leaves dry from tip downward", "milky bacterial ooze on cut leaves"],
+    "affected_parts": ["leaves"],
+    "favorable_conditions": "Temperature 25-34°C, heavy rains, flooding, high nitrogen",
+    "severity_indicators": {
+      "low": "Small lesions on leaf tips, <10% area",
+      "medium": "Lesions extending down leaf, 10-30%",
+      "high": "Most of leaf affected, 30-60%",
+      "critical": "Entire leaves dead, >60%, spreading rapidly"
+    },
+    "common_in": ["Punjab", "Sindh", "Bihar", "Assam"]
+  },
+  {
+    "id": "cotton_bollworm",
+    "name": "Cotton Bollworm (American Bollworm)",
+    "crop": "cotton",
+    "scientific_name": "Helicoverpa armigera",
+    "symptoms": ["round holes in bolls", "frass (caterpillar droppings) on bolls", "damaged flowers and squares", "caterpillars visible inside bolls"],
+    "affected_parts": ["bolls", "flowers", "squares", "leaves"],
+    "favorable_conditions": "Warm temperature 25-35°C, dry weather, late sowing",
+    "severity_indicators": {
+      "low": "1-2 larvae per plant, few boll holes",
+      "medium": "3-5 larvae per plant, 10-25% boll damage",
+      "high": "5-10 larvae per plant, 25-50% boll damage",
+      "critical": ">10 larvae per plant, >50% boll damage"
+    },
+    "common_in": ["Sindh", "Punjab", "Gujarat", "Maharashtra", "Telangana"]
+  },
+  {
+    "id": "cotton_whitefly",
+    "name": "Cotton Whitefly",
+    "crop": "cotton",
+    "scientific_name": "Bemisia tabaci",
+    "symptoms": ["small white flying insects under leaves", "honeydew (sticky substance) on leaves", "sooty mold (black coating) on honeydew", "leaf curling and yellowing"],
+    "affected_parts": ["leaves", "whole plant"],
+    "favorable_conditions": "Hot dry weather >30°C, low humidity, excessive nitrogen",
+    "severity_indicators": {
+      "low": "Few whiteflies visible, no honeydew",
+      "medium": "Moderate population, slight honeydew",
+      "high": "Heavy population, sticky leaves, sooty mold",
+      "critical": "Severe infestation, leaf curl, plant decline"
+    },
+    "common_in": ["Punjab", "Sindh", "Rajasthan", "Haryana"]
+  },
+  {
+    "id": "tomato_late_blight",
+    "name": "Tomato Late Blight",
+    "crop": "tomato",
+    "scientific_name": "Phytophthora infestans",
+    "symptoms": ["water-soaked dark green/brown spots on leaves", "white fuzzy growth on leaf undersides in humid conditions", "brown lesions on stems", "firm brown rot on fruits"],
+    "affected_parts": ["leaves", "stems", "fruits"],
+    "favorable_conditions": "Cool temperature 15-22°C, high humidity >90%, prolonged wet weather",
+    "severity_indicators": {
+      "low": "Few leaf spots, <10% foliage",
+      "medium": "Spreading spots, 10-30% foliage",
+      "high": "Large areas affected, 30-60% foliage",
+      "critical": "Rapid spread, >60%, fruit rot beginning"
+    },
+    "common_in": ["Punjab", "KPK", "Balochistan", "UP", "Himachal"]
+  },
+  {
+    "id": "tomato_early_blight",
+    "name": "Tomato Early Blight",
+    "crop": "tomato",
+    "scientific_name": "Alternaria solani",
+    "symptoms": ["dark brown spots with concentric rings (target-like)", "spots start on lower/older leaves first", "leaves yellow around spots", "dark sunken spots on fruit at stem end"],
+    "affected_parts": ["leaves", "stems", "fruits"],
+    "favorable_conditions": "Temperature 24-29°C, alternating wet-dry conditions, poor nutrition",
+    "severity_indicators": {
+      "low": "Few spots on lower leaves only, <10%",
+      "medium": "Spots spreading upward, 10-30%",
+      "high": "Upper leaves affected, 30-50% defoliation",
+      "critical": "Severe defoliation, >50%, fruit affected"
+    },
+    "common_in": ["All regions with tomato cultivation"]
+  },
+  {
+    "id": "sugarcane_red_rot",
+    "name": "Sugarcane Red Rot",
+    "crop": "sugarcane",
+    "scientific_name": "Colletotrichum falcatum",
+    "symptoms": ["red discoloration of internal cane tissue", "white patches within red tissue", "drying of upper leaves (crown)", "hollow stems with rotten pith"],
+    "affected_parts": ["stalk/cane", "leaves"],
+    "favorable_conditions": "Temperature 28-32°C, high moisture, waterlogging, using infected seed cane",
+    "severity_indicators": {
+      "low": "Slight internal reddening, plant appears normal externally",
+      "medium": "Clear internal red rot, some leaf drying",
+      "high": "Extensive internal rot, crown drying",
+      "critical": "Complete stalk rot, plant death"
+    },
+    "common_in": ["Punjab", "Sindh", "UP", "Maharashtra", "Karnataka"]
+  },
+  {
+    "id": "mango_anthracnose",
+    "name": "Mango Anthracnose",
+    "crop": "mango",
+    "scientific_name": "Colletotrichum gloeosporioides",
+    "symptoms": ["dark brown/black spots on leaves", "flower blight (flowers turn black and drop)", "dark sunken spots on fruits", "fruit rot during storage"],
+    "affected_parts": ["leaves", "flowers", "fruits"],
+    "favorable_conditions": "Temperature 25-30°C, high humidity, rainfall during flowering",
+    "severity_indicators": {
+      "low": "Few leaf spots, flowers mostly healthy",
+      "medium": "Moderate flower blight, 10-30% flower drop",
+      "high": "Severe flower blight, fruit spotting, 30-60% loss",
+      "critical": "Total flower destruction, severe fruit rot, >60% loss"
+    },
+    "common_in": ["Sindh", "Punjab", "Maharashtra", "UP", "Andhra Pradesh"]
+  },
+  {
+    "id": "potato_late_blight",
+    "name": "Potato Late Blight",
+    "crop": "potato",
+    "scientific_name": "Phytophthora infestans",
+    "symptoms": ["water-soaked dark patches on leaf tips and edges", "white mold on leaf undersides", "brown lesions spreading rapidly", "tuber rot (firm brown rot under skin)"],
+    "affected_parts": ["leaves", "stems", "tubers"],
+    "favorable_conditions": "Cool nights 10-15°C, humid days, prolonged wetness",
+    "severity_indicators": {
+      "low": "Few spots on some leaves, <10%",
+      "medium": "Multiple plants affected, 10-30%",
+      "high": "Rapid spread, 30-60% foliage dead",
+      "critical": "Field-wide epidemic, >60%, tuber rot"
+    },
+    "common_in": ["Punjab", "KPK", "UP", "West Bengal", "Himachal"]
+  },
+  {
+    "id": "maize_stem_borer",
+    "name": "Maize Stem Borer",
+    "crop": "maize",
+    "scientific_name": "Chilo partellus",
+    "symptoms": ["small holes in leaves (shot holes) from larval feeding", "dead heart (central shoot dries and pulls out easily)", "tunnels visible inside cut stems", "frass near stem entry holes"],
+    "affected_parts": ["leaves", "stem", "central shoot"],
+    "favorable_conditions": "Temperature 25-35°C, late planting, monoculture",
+    "severity_indicators": {
+      "low": "Shot holes on leaves only, no dead heart",
+      "medium": "Some dead hearts, <20% plants affected",
+      "high": "20-50% plants with dead heart or stem tunneling",
+      "critical": ">50% plants affected, severe stem breakage"
+    },
+    "common_in": ["Punjab", "KPK", "Bihar", "Rajasthan", "MP"]
+  },
+  {
+    "id": "chickpea_wilt",
+    "name": "Chickpea Fusarium Wilt",
+    "crop": "chickpea",
+    "scientific_name": "Fusarium oxysporum f.sp. ciceri",
+    "symptoms": ["drooping and wilting of whole plant", "yellowing starting from lower leaves", "brown discoloration of vascular tissue when stem is cut", "plant dries up but stays standing"],
+    "affected_parts": ["roots", "stem", "whole plant"],
+    "favorable_conditions": "Warm soil temperature 25-30°C, sandy soils, poor drainage",
+    "severity_indicators": {
+      "low": "1-5% plants wilting",
+      "medium": "5-20% plants wilting",
+      "high": "20-50% plants wilting",
+      "critical": ">50% plants wilting"
+    },
+    "common_in": ["Punjab", "Sindh", "Rajasthan", "MP", "Maharashtra"]
+  },
+  {
+    "id": "nitrogen_deficiency",
+    "name": "Nitrogen Deficiency",
+    "crop": "general",
+    "scientific_name": "N/A - Nutrient Deficiency",
+    "symptoms": ["older/lower leaves turn pale green then yellow", "uniform yellowing (not spotted)", "stunted growth", "thin weak stems", "reduced tillering in cereals"],
+    "affected_parts": ["lower leaves first", "whole plant"],
+    "favorable_conditions": "Sandy soils, heavy rainfall (leaching), insufficient fertilization, waterlogging",
+    "severity_indicators": {
+      "low": "Slight pale green color on older leaves",
+      "medium": "Clear yellowing of lower leaves, slight growth reduction",
+      "high": "Yellowing spreading to upper leaves, noticeable stunting",
+      "critical": "Entire plant yellow, severely stunted, leaf death"
+    },
+    "common_in": ["All regions"]
+  },
+  {
+    "id": "potassium_deficiency",
+    "name": "Potassium Deficiency",
+    "crop": "general",
+    "scientific_name": "N/A - Nutrient Deficiency",
+    "symptoms": ["leaf margins (edges) turn brown and scorched", "interveinal yellowing on older leaves", "weak stems prone to lodging", "poor fruit/grain quality"],
+    "affected_parts": ["leaf margins", "lower leaves first"],
+    "favorable_conditions": "Sandy soils, heavy leaching, continuous cropping without potash fertilizer",
+    "severity_indicators": {
+      "low": "Slight marginal browning on oldest leaves",
+      "medium": "Clear scorching on multiple lower leaves",
+      "high": "Extensive leaf burn, poor fruiting",
+      "critical": "Severe scorch, plant decline, crop failure risk"
+    },
+    "common_in": ["All regions, especially light-textured soils"]
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "disease_id": "wheat_leaf_rust",
+    "treatments": [
+      {"name": "Propiconazole 25% EC (Tilt)", "type": "chemical", "active_ingredient": "Propiconazole", "dosage_per_acre": "200 ml in 100L water", "application": "Foliar spray at first appearance", "frequency": "1-2 sprays at 15-day intervals", "cost_estimate": "Rs. 700-900/acre", "effectiveness": "85-95%", "safety": ["Wear gloves and mask", "14-day pre-harvest interval"], "waiting_period_days": 14},
+      {"name": "Neem Oil Spray", "type": "organic", "active_ingredient": "Azadirachtin", "dosage_per_acre": "500 ml in 100L water", "application": "Foliar spray as preventive", "frequency": "Every 10-14 days", "cost_estimate": "Rs. 400-600/acre", "effectiveness": "40-60%", "safety": ["Safe for organic farming"], "waiting_period_days": 0}
+    ],
+    "prevention": ["Use resistant varieties", "Avoid late sowing", "Balanced fertilization", "Monitor fields weekly from February"]
+  },
+  {
+    "disease_id": "rice_blast",
+    "treatments": [
+      {"name": "Tricyclazole 75% WP (Beam)", "type": "chemical", "active_ingredient": "Tricyclazole", "dosage_per_acre": "120g in 100L water", "application": "Foliar spray at first symptoms", "frequency": "2-3 sprays at 10-day intervals", "cost_estimate": "Rs. 500-700/acre", "effectiveness": "85-95%", "safety": ["Wear mask and gloves"], "waiting_period_days": 21},
+      {"name": "Pseudomonas fluorescens", "type": "organic", "active_ingredient": "Pseudomonas fluorescens", "dosage_per_acre": "250g in 100L water", "application": "Seed treatment + foliar spray", "frequency": "At sowing + tillering", "cost_estimate": "Rs. 200-400/acre", "effectiveness": "50-65%", "safety": ["Completely safe"], "waiting_period_days": 0}
+    ],
+    "prevention": ["Use blast-resistant varieties", "Avoid excessive nitrogen", "Proper plant spacing", "Treat seeds before sowing"]
+  },
+  {
+    "disease_id": "tomato_late_blight",
+    "treatments": [
+      {"name": "Metalaxyl + Mancozeb (Ridomil Gold)", "type": "chemical", "active_ingredient": "Metalaxyl 8% + Mancozeb 64%", "dosage_per_acre": "400g in 100L water", "application": "Foliar spray at first appearance", "frequency": "2-3 sprays at 10-14 day intervals", "cost_estimate": "Rs. 800-1200/acre", "effectiveness": "90-95%", "safety": ["Wear full protective equipment", "14-day pre-harvest interval"], "waiting_period_days": 14},
+      {"name": "Copper Oxychloride (Blitox)", "type": "organic", "active_ingredient": "Copper Oxychloride", "dosage_per_acre": "500g in 100L water", "application": "Preventive spray", "frequency": "Every 7-10 days", "cost_estimate": "Rs. 350-500/acre", "effectiveness": "60-75%", "safety": ["Approved for organic farming"], "waiting_period_days": 3}
+    ],
+    "prevention": ["Avoid overhead irrigation", "Good air circulation", "Remove infected debris", "Rotate crops 2-3 years"]
+  },
+  {
+    "disease_id": "cotton_bollworm",
+    "treatments": [
+      {"name": "Emamectin Benzoate 5% SG", "type": "chemical", "active_ingredient": "Emamectin Benzoate", "dosage_per_acre": "80-100g in 100L water", "application": "Spray targeting bolls in evening", "frequency": "2-3 sprays at 7-10 day intervals", "cost_estimate": "Rs. 600-800/acre", "effectiveness": "85-90%", "safety": ["Toxic to bees — spray in evening"], "waiting_period_days": 14},
+      {"name": "Bt (Bacillus thuringiensis)", "type": "organic", "active_ingredient": "Bt var. kurstaki", "dosage_per_acre": "400g in 100L water", "application": "Spray when larvae are small", "frequency": "Every 7 days", "cost_estimate": "Rs. 500-700/acre", "effectiveness": "60-75%", "safety": ["Safe for beneficials", "Organic certified"], "waiting_period_days": 0}
+    ],
+    "prevention": ["Install pheromone traps", "Plant trap crops (marigold)", "Release Trichogramma parasitoids", "Practice crop rotation"]
+  },
+  {
+    "disease_id": "nitrogen_deficiency",
+    "treatments": [
+      {"name": "Urea (46% Nitrogen)", "type": "chemical", "active_ingredient": "Urea", "dosage_per_acre": "50-75 kg broadcast or 2% foliar", "application": "Broadcast on moist soil and irrigate", "frequency": "Split 2-3 applications", "cost_estimate": "Rs. 800-1200/acre", "effectiveness": "Rapid green-up in 5-7 days", "safety": ["Do not apply to dry soil"], "waiting_period_days": 0},
+      {"name": "Vermicompost", "type": "organic", "active_ingredient": "Organic nitrogen", "dosage_per_acre": "2-3 tonnes", "application": "Incorporate into soil", "frequency": "At sowing", "cost_estimate": "Rs. 3000-5000/acre", "effectiveness": "Slow-release, long-term", "safety": ["100% organic"], "waiting_period_days": 0}
+    ],
+    "prevention": ["Test soil before every season", "Use legumes in rotation", "Apply organic matter regularly", "Split nitrogen applications"]
+  }
+]
